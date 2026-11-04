@@ -1,8 +1,0 @@
-README.md
-pyproject.toml
-src/agente_datos_oficiales_peru/__init__.py
-src/agente_datos_oficiales_peru.egg-info/PKG-INFO
-src/agente_datos_oficiales_peru.egg-info/SOURCES.txt
-src/agente_datos_oficiales_peru.egg-info/dependency_links.txt
-src/agente_datos_oficiales_peru.egg-info/requires.txt
-src/agente_datos_oficiales_peru.egg-info/top_level.txt
