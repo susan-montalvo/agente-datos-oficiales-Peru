@@ -1,0 +1,32 @@
+Invocacion individual: limpiando-enaho
+Fecha: 2026-11-05
+Entorno: Claude Code CLI 2.1.318; solicitud en lenguaje natural.
+
+Solicitud:
+Limpia la ENAHO 2024 usando la skill limpiando-enaho y reporta las validaciones y la ruta del Parquet generado.
+
+Eventos observados en la sesion:
+- Skill: limpiando-enaho
+- Comando: uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2024
+
+Salida relevante de las herramientas:
+ENAHO 2024 · validación
+Hogares en la sumaria: 33,691
+Filas en el módulo 200: 117,721
+Residentes habituales en la base: 108,664
+Pobreza (sumaria, factor07 × mieperho): 27.58 %
+Pobreza extrema (sumaria): 5.50 %
+Pobreza (personas, facpob07): 27.53 %
+Pobreza oficial INEI: 27.6 %
+
+[OK] llaves de hogar únicas en la sumaria
+[OK] llaves de persona únicas
+[OK] la unión no perdió ni duplicó filas
+[OK] toda persona tiene hogar en la sumaria
+[OK] ubigeo con 6 dígitos
+[OK] pobreza difiere del INEI (27.6 %) en menos de 0.1 puntos
+
+VALIDACIÓN OK
+-rw-r--r--@ 1 susanmontalvo  staff  481480 Nov  5 13:39 salidas/personas_2024.parquet
+
+La base salidas/personas_2024.parquet se aparto temporalmente antes de las pruebas de grafico y mapa, y se restauro byte por byte al terminar. No se incluyen microdatos en esta evidencia.

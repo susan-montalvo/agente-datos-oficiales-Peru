@@ -1,0 +1,78 @@
+Cadena: mapeando-enaho activa limpiando-enaho
+Fecha: 2026-11-05
+Entorno: Claude Code CLI 2.1.318; solicitud en lenguaje natural.
+
+Solicitud:
+Haz un mapa coroplético de la pobreza monetaria por departamento para ENAHO 2024. Usa mapeando-enaho; como falta la base procesada, ejecuta primero la limpieza necesaria y luego genera el mapa validado contra la referencia.
+
+Eventos observados en la sesion:
+- Skill: mapeando-enaho
+- Skill: limpiando-enaho
+- Comando: uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2024
+- Comando: uv run .claude/skills/mapeando-enaho/scripts/mapear.py --anio 2024
+
+Salida relevante de las herramientas:
+personas_2024.parquet
+validacion.txt
+[OK] 25 códigos territoriales únicos en el GeoJSON
+[OK] 25 códigos territoriales únicos en la referencia
+[OK] 25 departamentos en el GeoJSON
+[OK] 25 departamentos con dato
+[OK] todos los códigos de la ENAHO están en el mapa
+[OK] Lima (15) y Callao (07) separados
+[OK] todos los códigos de la referencia están en el mapa
+[OK] Referencia Amazonas (01): 25.7 %
+[OK] Referencia Ancash (02): 22.8 %
+[OK] Referencia Apurimac (03): 24.0 %
+[OK] Referencia Arequipa (04): 15.8 %
+[OK] Referencia Ayacucho (05): 32.8 %
+[OK] Referencia Cajamarca (06): 45.0 %
+[OK] Referencia Callao (07): 33.9 %
+[OK] Referencia Cusco (08): 18.5 %
+[OK] Referencia Huancavelica (09): 33.4 %
+[OK] Referencia Huanuco (10): 39.0 %
+[OK] Referencia Ica (11): 6.0 %
+[OK] Referencia Junin (12): 18.5 %
+[OK] Referencia La Libertad (13): 30.2 %
+[OK] Referencia Lambayeque (14): 14.0 %
+[OK] Referencia Lima (15): 27.1 %
+[OK] Referencia Loreto (16): 43.0 %
+[OK] Referencia Madre De Dios (17): 11.1 %
+[OK] Referencia Moquegua (18): 11.0 %
+[OK] Referencia Pasco (19): 39.0 %
+[OK] Referencia Piura (20): 31.9 %
+[OK] Referencia Puno (21): 39.9 %
+[OK] Referencia San Martin (22): 22.0 %
+[OK] Referencia Tacna (23): 24.0 %
+[OK] Referencia Tumbes (24): 26.9 %
+[OK] Referencia Ucayali (25): 27.1 %
+
+Pobreza monetaria por departamento, Perú 2024 (% de personas, sumaria: factor07 × mieperho)
+  06 Cajamarca: 45.0 %
+  16 Loreto: 43.0 %
+  21 Puno: 39.9 %
+  19 Pasco: 39.0 %
+  10 Huanuco: 39.0 %
+  07 Callao: 33.9 %
+  09 Huancavelica: 33.4 %
+  05 Ayacucho: 32.8 %
+  20 Piura: 31.9 %
+  13 La Libertad: 30.2 %
+  25 Ucayali: 27.1 %
+  15 Lima: 27.1 %
+  24 Tumbes: 26.9 %
+  01 Amazonas: 25.7 %
+  23 Tacna: 24.0 %
+  03 Apurimac: 24.0 %
+  02 Ancash: 22.8 %
+  22 San Martin: 22.0 %
+  08 Cusco: 18.5 %
+  12 Junin: 18.5 %
+  04 Arequipa: 15.8 %
+  14 Lambayeque: 14.0 %
+  17 Madre De Dios: 11.1 %
+  18 Moquegua: 11.0 %
+  11 Ica: 6.0 %
+Mapa: mapas/pobreza_departamento.png
+
+La base salidas/personas_2024.parquet se aparto temporalmente antes de las pruebas de grafico y mapa, y se restauro byte por byte al terminar. No se incluyen microdatos en esta evidencia.

@@ -62,6 +62,25 @@ Los PNG verificables están versionados en
 sexo, edad y departamento. No se incluyen los microdatos; para reproducir el
 flujo completo, descárgalos de los enlaces oficiales indicados arriba.
 
+### Invocación individual y coordinación de las tres Skills
+
+Las [evidencias de coordinación](evidencias/parte-2/coordinacion-skills-2024/)
+registran tres sesiones nuevas de Claude Code en lenguaje natural:
+
+- [Limpieza individual](evidencias/parte-2/coordinacion-skills-2024/limpiando-individual.txt):
+  se activó `limpiando-enaho` y terminó con `VALIDACIÓN OK`.
+- [Gráfico sin base procesada](evidencias/parte-2/coordinacion-skills-2024/graficando-sin-base.txt):
+  se activó `graficando-enaho`, luego `limpiando-enaho`, y finalmente se generó
+  el gráfico por área.
+- [Mapa sin base procesada](evidencias/parte-2/coordinacion-skills-2024/mapeando-sin-base.txt):
+  se activó `mapeando-enaho`, luego `limpiando-enaho`, y se generó el mapa tras
+  aprobar las 25 comparaciones con la referencia.
+
+Las figuras de esas dos cadenas están en
+[figuras de coordinación](evidencias/parte-2/coordinacion-skills-2024/figuras/).
+Para ambas pruebas se apartó temporalmente el Parquet preexistente y se restauró
+byte por byte al concluir. Los microdatos no se versionan.
+
 ## Parte 1: servidor MCP del BCRP
 
 El servidor sigue el contrato de la Sesion 04 y toma como referencia el

@@ -1,0 +1,22 @@
+Cadena: graficando-enaho activa limpiando-enaho
+Fecha: 2026-11-05
+Entorno: Claude Code CLI 2.1.318; solicitud en lenguaje natural.
+
+Solicitud:
+Grafica la pobreza monetaria urbana y rural de la ENAHO 2024. Usa graficando-enaho; como no hay Parquet procesado, completa primero la limpieza que necesites y luego genera el gráfico.
+
+Eventos observados en la sesion:
+- Skill: graficando-enaho
+- Skill: limpiando-enaho
+- Comando: uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2024
+- Comando: uv run .claude/skills/graficando-enaho/scripts/graficar.py --por area --anio 2024
+
+Salida relevante de las herramientas:
+personas_2024.parquet
+validacion.txt
+Pobreza monetaria por área, Perú 2024 (% de personas, ponderado con facpob07)
+  Rural: 39.4 %
+  Urbano: 24.7 %
+Figura: figuras/pobreza_area_2024.png
+
+La base salidas/personas_2024.parquet se aparto temporalmente antes de las pruebas de grafico y mapa, y se restauro byte por byte al terminar. No se incluyen microdatos en esta evidencia.
