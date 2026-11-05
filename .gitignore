@@ -5,3 +5,9 @@ __pycache__/
 .env
 .DS_Store
 mcp/data/
+/datos/*.zip
+/datos/966-Modulo02/
+/datos/966-Modulo34/
+/salidas/
+/figuras/
+/mapas/

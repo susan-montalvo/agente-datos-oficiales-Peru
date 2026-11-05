@@ -21,11 +21,32 @@ uv run pytest
 - `src/agente_datos_oficiales_peru/`: codigo del proyecto.
 - `mcp/server.py`: servidor MCP de series oficiales del BCRP.
 - `mcp/test_server.py` y `mcp/test_comparar_series.py`: pruebas del servidor.
-- `data/`: datos de trabajo; no guardar credenciales ni datos descargados en Git.
-- `outputs/`: graficos, resultados e informes generados.
+- `.claude/skills/`: Skills locales para limpiar, graficar y mapear la ENAHO.
+- `datos/`: insumos ENAHO y GeoJSON; los microdatos descargados no se versionan.
+- `salidas/`, `figuras/` y `mapas/`: resultados generados por las Skills.
 
 El proyecto debe documentar las fuentes oficiales, los pasos de procesamiento y
 los resultados para que el analisis pueda reproducirse.
+
+## Parte 2: Skills para procesar y analizar ENAHO
+
+Las tres Skills de `.claude/skills/` son copias independientes de las desarrolladas
+en `skills-enaho`: `limpiando-enaho`, `graficando-enaho` y `mapeando-enaho`.
+Sus scripts usan las dependencias ya declaradas en `pyproject.toml` y se ejecutan
+desde la raíz de este repositorio con `uv run`.
+
+Los ZIP de microdatos ENAHO deben estar en `datos/` (código INEI 966 para 2024).
+No se versionan. El GeoJSON departamental y la referencia de pobreza 2024 están
+incluidos en `datos/` y `referencias/`. Para procesar, graficar y mapear:
+
+```bash
+uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2024
+uv run .claude/skills/graficando-enaho/scripts/graficar.py --por area --anio 2024
+uv run .claude/skills/mapeando-enaho/scripts/mapear.py --anio 2024
+```
+
+La limpieza debe pasar la validación antes de usar la base en los otros pasos.
+Los productos se guardan en `salidas/`, `figuras/` y `mapas/`.
 
 ## Parte 1: servidor MCP del BCRP
 
