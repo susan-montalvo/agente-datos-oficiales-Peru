@@ -35,9 +35,11 @@ en `skills-enaho`: `limpiando-enaho`, `graficando-enaho` y `mapeando-enaho`.
 Sus scripts usan las dependencias ya declaradas en `pyproject.toml` y se ejecutan
 desde la raíz de este repositorio con `uv run`.
 
-Los ZIP de microdatos ENAHO deben estar en `datos/` (código INEI 966 para 2024).
-No se versionan. El GeoJSON departamental y la referencia de pobreza 2024 están
-incluidos en `datos/` y `referencias/`. Para procesar, graficar y mapear:
+Los ZIP de microdatos ENAHO deben descargarse del [INEI, módulo 34](https://proyectos.inei.gob.pe/iinei/srienaho/descarga/STATA/966-Modulo34.zip)
+y [módulo 02](https://proyectos.inei.gob.pe/iinei/srienaho/descarga/STATA/966-Modulo02.zip)
+(código INEI 966 para 2024) y guardarse en `datos/`. No se versionan. El GeoJSON
+departamental y la referencia de pobreza 2024 están incluidos en `datos/` y
+`referencias/`. Para procesar, graficar y mapear:
 
 ```bash
 uv run .claude/skills/limpiando-enaho/scripts/limpiar.py --anio 2024
@@ -47,6 +49,18 @@ uv run .claude/skills/mapeando-enaho/scripts/mapear.py --anio 2024
 
 La limpieza debe pasar la validación antes de usar la base en los otros pasos.
 Los productos se guardan en `salidas/`, `figuras/` y `mapas/`.
+
+### Evidencias de `graficando-enaho`
+
+La [transcripción de Claude Code](evidencias/parte-2/graficando-enaho/activacion-lenguaje-natural-2024.txt)
+registra la solicitud en lenguaje natural, la activación de la Skill y la
+ejecución del gráfico por área (39.4 % rural y 24.7 % urbana). Las salidas de
+consola para departamento, sexo y edad están en
+[ejecuciones-complementarias-2024.txt](evidencias/parte-2/graficando-enaho/ejecuciones-complementarias-2024.txt).
+Los PNG verificables están versionados en
+[figuras de evidencia](evidencias/parte-2/graficando-enaho/figuras/): área,
+sexo, edad y departamento. No se incluyen los microdatos; para reproducir el
+flujo completo, descárgalos de los enlaces oficiales indicados arriba.
 
 ## Parte 1: servidor MCP del BCRP
 

@@ -1,0 +1,23 @@
+Evidencia de activacion de graficando-enaho
+Fecha: 2026-11-05
+Claude Code: 2.1.318 (CLI, modo print con salida de eventos)
+
+Solicitud del usuario:
+Grafica la pobreza monetaria urbana y rural de la ENAHO 2024. Usa la skill graficando-enaho del proyecto y reporta las cifras ponderadas y la ruta de la figura generada.
+
+Eventos observados:
+- Claude Code invoco la herramienta Skill con skill=graficando-enaho.
+- La Skill indico que iba a ejecutar el script de graficos.
+- Claude Code ejecuto:
+  uv run /Users/susanmontalvo/Documents/GitHub/agente-datos-oficiales-Peru/.claude/skills/graficando-enaho/scripts/graficar.py --por area --anio 2024
+
+Salida del script:
+Pobreza monetaria por area, Peru 2024 (% de personas, ponderado con facpob07)
+  Rural: 39.4 %
+  Urbano: 24.7 %
+Figura: figuras/pobreza_area_2024.png
+
+Respuesta de Claude Code:
+Genero el grafico de pobreza monetaria por area de la ENAHO 2024 con la skill graficando-enaho. Reporto 39.4 % rural y 24.7 % urbano, ponderados con facpob07, y la figura figuras/pobreza_area_2024.png.
+
+Esta transcripcion resume los eventos de una ejecucion nueva de Claude Code. No contiene microdatos ENAHO.

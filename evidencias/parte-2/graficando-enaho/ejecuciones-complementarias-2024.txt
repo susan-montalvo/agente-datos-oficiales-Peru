@@ -1,0 +1,44 @@
+
+$ uv run .claude/skills/graficando-enaho/scripts/graficar.py --por departamento --anio 2024
+Pobreza monetaria por departamento, Perú 2024 (% de personas, ponderado con facpob07)
+  Cajamarca: 45.0 %
+  Loreto: 42.6 %
+  Puno: 40.4 %
+  Huánuco: 39.5 %
+  Pasco: 39.3 %
+  Callao: 33.8 %
+  Huancavelica: 33.6 %
+  Ayacucho: 33.0 %
+  Piura: 31.8 %
+  La Libertad: 30.1 %
+  Ucayali: 27.1 %
+  Lima: 26.9 %
+  Tumbes: 26.6 %
+  Amazonas: 26.1 %
+  Apurímac: 24.1 %
+  Tacna: 23.9 %
+  Áncash: 22.9 %
+  San Martín: 22.0 %
+  Junín: 18.6 %
+  Cusco: 18.5 %
+  Arequipa: 15.8 %
+  Lambayeque: 14.1 %
+  Madre de Dios: 11.1 %
+  Moquegua: 10.9 %
+  Ica: 5.9 %
+Figura: figuras/pobreza_departamento_2024.png
+
+$ uv run .claude/skills/graficando-enaho/scripts/graficar.py --por sexo --anio 2024
+Pobreza monetaria por sexo, Perú 2024 (% de personas, ponderado con facpob07)
+  Mujer: 27.7 %
+  Hombre: 27.4 %
+Figura: figuras/pobreza_sexo_2024.png
+
+$ uv run .claude/skills/graficando-enaho/scripts/graficar.py --por edad --anio 2024
+Pobreza monetaria por grupo de edad, Perú 2024 (% de personas, ponderado con facpob07)
+  0–17: 36.5 %
+  30–44: 27.9 %
+  18–29: 23.9 %
+  60 y más: 22.0 %
+  45–59: 21.4 %
+Figura: figuras/pobreza_edad_2024.png
