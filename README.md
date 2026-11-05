@@ -57,12 +57,52 @@ guarda localmente en `mcp/data/` y no se versiona.
 
 ```bash
 uv sync --group dev
-uv run pytest -q
 uv run python mcp/server.py
 ```
 
-Claude Code puede iniciar el servidor con la configuracion local de `.mcp.json`.
+Claude Code inicia el servidor con la configuracion local de `.mcp.json`.
 Sus herramientas `buscar_series`, `serie`, `resumen` y `comparar_series`
 devuelven el codigo, el periodo y la fuente oficial. Las fechas aceptadas son
 `YYYY-MM` (mensual), `YYYY-T1` (trimestral), `YYYY-MM-DD` (diaria) y `YYYY`
 (anual).
+
+### Verificación de recursos, prompt e integración
+
+- **Acceso del cliente MCP (paso 2):** verificado con un cliente FastMCP por
+  `stdio`. El cliente enumeró las herramientas y la plantilla
+  `bcrp://serie/{codigo}`, leyó la ficha de `PN01273PM` y encontró y ejecutó el
+  prompt `informe`.
+- **Funcionamiento desde Claude Code (paso 3):** demostrado desde Claude Code.
+  En la consulta de IPC de Lima Metropolitana a 12 meses para `2025-12` a
+  `2026-09`, Claude Code llamó al servidor `bcrp`, presentó las observaciones y
+  el resumen calculado, y mostró el código de serie, el período y el enlace
+  oficial del BCRP.
+
+### Herramienta propia: `comparar_series`
+
+Se agrego `comparar_series` como herramienta de analisis adicional. Recibe dos
+codigos de serie y un intervalo, alinea las observaciones por periodos
+coincidentes y calcula su correlacion en Python. Ambas series deben tener la
+misma frecuencia y al menos dos periodos coincidentes. La respuesta incluye
+los pares comparados, la cantidad de periodos, la correlacion y las fuentes
+oficiales. La correlacion describe asociacion y no demuestra causalidad.
+
+Desde Claude Code se puede solicitar, por ejemplo: «Compara las series
+mensuales PN01273PM y [segundo codigo] entre 2020-01 y 2024-12 e informa la
+correlacion, los periodos coincidentes y las fuentes».
+
+## Estado verificado y evidencias
+
+- **Pruebas automatizadas:** `uv run pytest -q` terminó con `10 passed`.
+  La [salida de pytest](evidencias/parte-1/pruebas-automatizadas-10.txt) y la
+  [captura de la ejecución](evidencias/parte-1/pruebas-automatizadas-10.png)
+  están guardadas en el repositorio.
+- **Integración MCP:** la [captura de Claude Code](evidencias/parte-1/integracion-claude-code-bcrp.png)
+  documenta la consulta al servidor BCRP.
+- **Skills ENAHO:** las tres Skills se integraron como copias independientes.
+  Se ejecutó el flujo de limpieza, gráfico por área y mapa para 2024: la
+  limpieza terminó con `VALIDACIÓN OK` (108,664 residentes), el gráfico
+  informó 39.4 % de pobreza rural y 24.7 % urbana, y el mapa aprobó las
+  comparaciones de los 25 departamentos con la referencia.
+- Los microdatos y los resultados generados se excluyen de Git; se generan
+  localmente al ejecutar los comandos de la Parte 2.
