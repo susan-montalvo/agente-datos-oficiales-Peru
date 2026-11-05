@@ -1,0 +1,37 @@
+BCRP · PBI, variación interanual mensual, 2024
+Promedio simple de las 12 tasas mensuales: 3.48 %
+Máximo: 2024-05 (5.71 %)
+Mínimo: 2024-03 (-0.41 %)
+Diciembre: 5.07 %
+
+ENAHO · pobreza monetaria departamental 2024, %
+  06 Cajamarca: 45.0 %
+  16 Loreto: 43.0 %
+  21 Puno: 39.9 %
+  19 Pasco: 39.0 %
+  10 Huánuco: 39.0 %
+  07 Callao: 33.9 %
+  09 Huancavelica: 33.4 %
+  05 Ayacucho: 32.8 %
+  20 Piura: 31.9 %
+  13 La Libertad: 30.2 %
+  25 Ucayali: 27.1 %
+  15 Lima: 27.1 %
+  24 Tumbes: 26.9 %
+  01 Amazonas: 25.7 %
+  23 Tacna: 24.0 %
+  03 Apurímac: 24.0 %
+  02 Áncash: 22.8 %
+  22 San Martín: 22.0 %
+  08 Cusco: 18.5 %
+  12 Junín: 18.5 %
+  04 Arequipa: 15.8 %
+  14 Lambayeque: 14.0 %
+  17 Madre de Dios: 11.1 %
+  18 Moquegua: 11.0 %
+  11 Ica: 6.0 %
+
+[OK] 25 departamentos con códigos únicos
+[OK] cobertura completa y coincidencia con referencia a un decimal
+
+Resultados: outputs/parte-3

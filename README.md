@@ -81,6 +81,20 @@ Las figuras de esas dos cadenas están en
 Para ambas pruebas se apartó temporalmente el Parquet preexistente y se restauró
 byte por byte al concluir. Los microdatos no se versionan.
 
+## Parte 3: agente de investigación socioeconómica
+
+### Plan de análisis
+
+El documento [Plan de análisis de la Parte 3](PLAN_ANALISIS_PARTE_3.md) formula la pregunta de
+investigación y detalla cómo combinar la serie mensual del PBI del BCRP con la
+pobreza departamental ENAHO 2024, sus validaciones, entregables y límites de
+interpretación. Fue elaborado por el asistente de IA a partir de la pregunta
+acordada con la estudiante.
+
+El [informe final reproducible](informes/informe_final.md) presenta los
+resultados, las fuentes oficiales, las validaciones y los pasos para repetir el
+análisis.
+
 ## Parte 1: servidor MCP del BCRP
 
 El servidor sigue el contrato de la Sesion 04 y toma como referencia el
