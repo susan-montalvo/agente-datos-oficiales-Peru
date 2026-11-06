@@ -1,0 +1,11 @@
+pregunta_id,pregunta,respuesta
+P01,"Según la serie mensual PN01728AM del BCRP, ¿cuál fue la variación interanual del PBI en mayo de 2024?",5.71 %
+P02,"Según la serie mensual PN01273PM del BCRP, ¿cuál fue la variación porcentual de 12 meses del IPC de Lima Metropolitana (inflación interanual) en diciembre de 2024?",1.97 %
+P03,"Según la serie mensual PN01210PM del BCRP (tipo de cambio bancario promedio, S/ por US$), ¿cuál fue el promedio simple de los 12 meses de 2024?",S/ 3.754 por US$
+P04,"Según la serie mensual PD04722MM del BCRP, ¿en cuántos puntos porcentuales varió la tasa de referencia de la política monetaria entre enero de 2024 y diciembre de 2024?",-1.50 puntos porcentuales (de 6.50 % a 5.00 %)
+P05,"Según los microdatos de la ENAHO 2024 (Módulos 02 y 34), ¿qué porcentaje de las personas menores de 18 años (0 a 17 años) se encontraba en situación de pobreza monetaria?",36.5 %
+P06,"Según los microdatos de la ENAHO 2024 (Módulos 02 y 34), ¿qué porcentaje de los niños y niñas de 0 a 4 años se encontraba en situación de pobreza monetaria extrema?",10.0 %
+P07,"Según los microdatos de la ENAHO 2024 (Módulos 02 y 34), ¿qué porcentaje de las mujeres se encontraba en situación de pobreza monetaria?",27.7 %
+P08,"Según los microdatos de la ENAHO 2024 (Módulos 02 y 34), ¿cuántos puntos porcentuales más alta fue la pobreza monetaria de las personas de 0 a 17 años que la de las personas de 60 años a más?",14.5 puntos porcentuales (36.5 % vs 22.0 %)
+P09,"Combinando ENAHO y BCRP: si la pobreza monetaria pasó de 29.0 % (2023) a 27.6 % (2024), ¿cuál es el cociente entre esa variación (en puntos porcentuales) y el promedio simple de las variaciones interanuales mensuales del PBI de 2024 (serie PN01728AM)?",-0.40 (-1.4 pp / 3.48 %)
+P10,Combinando ENAHO y BCRP: ¿a cuántos dólares equivale la línea de pobreza monetaria promedio de 2024 (Módulo 34 de la ENAHO) usando el tipo de cambio bancario promedio de 2024 (promedio simple de los 12 meses de la serie PN01210PM)?,US$ 121.04 (S/ 454.39 / 3.754)

@@ -1,0 +1,232 @@
+{
+  "herramientas_disponibles": [
+    "buscar_series",
+    "serie",
+    "resumen",
+    "comparar_series"
+  ],
+  "llamadas": [
+    {
+      "herramienta": "serie",
+      "argumentos": {
+        "codigo": "PN01728AM",
+        "desde": "2024-01",
+        "hasta": "2024-12"
+      },
+      "respuesta": {
+        "codigo": "PN01728AM",
+        "nombre": "Producto bruto interno y demanda interna (variación porcentual interanual) - PBI",
+        "frecuencia": "Mensual",
+        "datos": [
+          {
+            "periodo": "2024-01",
+            "valor": 1.83097461976354
+          },
+          {
+            "periodo": "2024-02",
+            "valor": 3.16241000807473
+          },
+          {
+            "periodo": "2024-03",
+            "valor": -0.409690120959002
+          },
+          {
+            "periodo": "2024-04",
+            "valor": 5.52986981371346
+          },
+          {
+            "periodo": "2024-05",
+            "valor": 5.70691310837814
+          },
+          {
+            "periodo": "2024-06",
+            "valor": 0.370585322038706
+          },
+          {
+            "periodo": "2024-07",
+            "valor": 4.85868197288225
+          },
+          {
+            "periodo": "2024-08",
+            "valor": 3.97028100948149
+          },
+          {
+            "periodo": "2024-09",
+            "valor": 3.49053235679599
+          },
+          {
+            "periodo": "2024-10",
+            "valor": 3.83110341773776
+          },
+          {
+            "periodo": "2024-11",
+            "valor": 4.38200682962149
+          },
+          {
+            "periodo": "2024-12",
+            "valor": 5.06622215564914
+          }
+        ],
+        "fuente": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01728AM/json/2024-1/2024-12"
+      }
+    },
+    {
+      "herramienta": "serie",
+      "argumentos": {
+        "codigo": "PN01273PM",
+        "desde": "2024-12",
+        "hasta": "2024-12"
+      },
+      "respuesta": {
+        "codigo": "PN01273PM",
+        "nombre": "Índice de precios Lima Metropolitana (var% 12 meses) - IPC",
+        "frecuencia": "Mensual",
+        "datos": [
+          {
+            "periodo": "2024-12",
+            "valor": 1.96630270142824
+          }
+        ],
+        "fuente": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01273PM/json/2024-12/2024-12"
+      }
+    },
+    {
+      "herramienta": "resumen",
+      "argumentos": {
+        "codigo": "PN01210PM",
+        "desde": "2024-01",
+        "hasta": "2024-12"
+      },
+      "respuesta": {
+        "codigo": "PN01210PM",
+        "nombre": "Tipo de cambio - promedio del periodo (S/ por US$) - Bancario - Promedio",
+        "frecuencia": "Mensual",
+        "periodo": {
+          "desde": "2024-01",
+          "hasta": "2024-12"
+        },
+        "primero": {
+          "periodo": "2024-01",
+          "valor": 3.73980952380952
+        },
+        "ultimo": {
+          "periodo": "2024-12",
+          "valor": 3.73489473684211
+        },
+        "cambio": -0.004914786967409768,
+        "variacion_pct": -0.13141810929459766,
+        "promedio": 3.753892879452419,
+        "maximo": {
+          "periodo": "2024-02",
+          "valor": 3.82730952380952
+        },
+        "minimo": {
+          "periodo": "2024-03",
+          "valor": 3.70955263157895
+        },
+        "fuente": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01210PM/json/2024-1/2024-12"
+      }
+    },
+    {
+      "herramienta": "serie",
+      "argumentos": {
+        "codigo": "PD04722MM",
+        "desde": "2024-01",
+        "hasta": "2024-12"
+      },
+      "respuesta": {
+        "codigo": "PD04722MM",
+        "nombre": "Tasas de interés del Banco Central de Reserva - Tasa de Referencia de la Política Monetaria",
+        "frecuencia": "Mensual",
+        "datos": [
+          {
+            "periodo": "2024-01",
+            "valor": 6.5
+          },
+          {
+            "periodo": "2024-02",
+            "valor": 6.25
+          },
+          {
+            "periodo": "2024-03",
+            "valor": 6.25
+          },
+          {
+            "periodo": "2024-04",
+            "valor": 6.0
+          },
+          {
+            "periodo": "2024-05",
+            "valor": 5.75
+          },
+          {
+            "periodo": "2024-06",
+            "valor": 5.75
+          },
+          {
+            "periodo": "2024-07",
+            "valor": 5.75
+          },
+          {
+            "periodo": "2024-08",
+            "valor": 5.5
+          },
+          {
+            "periodo": "2024-09",
+            "valor": 5.25
+          },
+          {
+            "periodo": "2024-10",
+            "valor": 5.25
+          },
+          {
+            "periodo": "2024-11",
+            "valor": 5.0
+          },
+          {
+            "periodo": "2024-12",
+            "valor": 5.0
+          }
+        ],
+        "fuente": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PD04722MM/json/2024-1/2024-12"
+      }
+    },
+    {
+      "herramienta": "resumen",
+      "argumentos": {
+        "codigo": "PN01728AM",
+        "desde": "2024-01",
+        "hasta": "2024-12"
+      },
+      "respuesta": {
+        "codigo": "PN01728AM",
+        "nombre": "Producto bruto interno y demanda interna (variación porcentual interanual) - PBI",
+        "frecuencia": "Mensual",
+        "periodo": {
+          "desde": "2024-01",
+          "hasta": "2024-12"
+        },
+        "primero": {
+          "periodo": "2024-01",
+          "valor": 1.83097461976354
+        },
+        "ultimo": {
+          "periodo": "2024-12",
+          "valor": 5.06622215564914
+        },
+        "cambio": 3.2352475358855997,
+        "variacion_pct": 176.69537856856877,
+        "promedio": 3.4824908744314746,
+        "maximo": {
+          "periodo": "2024-05",
+          "valor": 5.70691310837814
+        },
+        "minimo": {
+          "periodo": "2024-03",
+          "valor": -0.409690120959002
+        },
+        "fuente": "https://estadisticas.bcrp.gob.pe/estadisticas/series/api/PN01728AM/json/2024-1/2024-12"
+      }
+    }
+  ]
+}
